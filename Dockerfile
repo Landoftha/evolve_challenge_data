@@ -39,4 +39,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD python -c "import psycopg2; print('Health check passed')" || exit 1
 
 # Default command
-CMD ["python", "predict.py"]
+CMD ["python", "src/predict.py"]

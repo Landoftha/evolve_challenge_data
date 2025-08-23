@@ -27,10 +27,10 @@ def main():
     # --- 1. EXTRAÇÃO (Extraction) ---
     print("\n[ETAPA 1/3] Carregando dados das fontes...")
     try:
-        mrr_df = pd.read_csv("data/mrr.csv", sep=';')
-        clientes_df = pd.read_csv("data/clientes_desde.csv", sep=';')
-        contratacoes_df = pd.read_csv("data/contratacoes_ultimos_12_meses.csv", sep=';')
-        nps_df = pd.read_csv("data/nps_relacional.csv", sep=';')
+        mrr_df = pd.read_csv("data/raw/mrr.csv", sep=';')
+        clientes_df = pd.read_csv("data/raw/clientes_desde.csv", sep=';')
+        contratacoes_df = pd.read_csv("data/raw/contratacoes_ultimos_12_meses.csv", sep=';')
+        nps_df = pd.read_csv("data/raw/nps_relacional.csv", sep=';')
         print("   - Dados carregados com sucesso.")
     except FileNotFoundError as e:
         print(f"   - ERRO: Arquivo não encontrado. Verifique o caminho: {e}")
