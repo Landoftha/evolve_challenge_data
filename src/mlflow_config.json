@@ -1,0 +1,14 @@
+{
+  "tracking_uri": "sqlite:///mlflow.db",
+  "experiment_name": "evolve_challenge_2025",
+  "artifact_location": "./mlflow_artifacts",
+  "registry_uri": null,
+  "model_registry": {
+    "churn_model_name": "churn_prediction_model",
+    "clustering_model_name": "customer_clustering_model"
+  },
+  "experiments": {
+    "churn": "churn_prediction_evolve",
+    "clustering": "customer_clustering_evolve"
+  }
+}
