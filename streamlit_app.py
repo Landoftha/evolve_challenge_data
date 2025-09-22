@@ -126,7 +126,7 @@ def load_data():
         except Exception as e2:
             try:
                 # Try with error handling
-                df = pd.read_csv('dataset_unificado.csv', encoding='utf-8', error_bad_lines=False, warn_bad_lines=False)
+                df = pd.read_csv('dataset_unificado.csv', encoding='utf-8', on_bad_lines='skip')
                 df = convert_numeric_columns(df)
                 return df
             except Exception as e3:
